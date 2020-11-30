@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<TilePane alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="634.0" prefWidth="825.0" tileAlignment="BOTTOM_LEFT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="START">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="CONTINUE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="OPTION">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="HELP">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="ABOUT">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" style="-fx-min-width: 200px;" text="EXIT">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </children>
+</TilePane>

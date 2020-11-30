@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABOUT THE GAME">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="101.0" layoutY="42.0" startX="-100.0" />
+      <Text layoutX="14.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="游戏目标：玩家需要操控自己所扮演的角色，通过在全国各地的市场中寻找低价商品并买入，" />
+      <Text layoutX="14.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="同时在其他地方将商品以更高的价格卖出，以此来赚取差价。玩家需要在一年的时间内通过这" />
+      <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="种方式还清身上的债务，并在游戏结束前尽可能的赚取更多的钱。" />
+      <Text layoutX="14.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="游戏说明：" />
+      <Line endX="100.0" layoutX="101.0" layoutY="120.0" startX="-100.0" />
+      <Text layoutX="14.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.玩家起始资金为1000元，起始债务为100000元。玩家的资金只有通过自己买卖商品才能够" />
+      <Text layoutX="14.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="赚到钱，玩家的债务每天会以0.1%的数量上涨。玩家可以通过手动还债来减少债务数量。" />
+      <Text layoutX="14.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.玩家初始默认位于北京。玩家可以在其位于的市场上交易，而要前往其它地区的市场，需要" />
+      <Text layoutX="14.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="玩家自行前往。玩家只能前往与其自身所在省份相邻的省份，同时玩家每移动一次，时间就会" />
+      <Text layoutX="14.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="流逝一天。" />
+      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.各个地区市场的物价和物品数量都是基于一个基数随机生成的，物价的浮动值在80%-120%" />
+      <Text layoutX="14.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="之间，商品数量的浮动值在20到400之间，所有地区的市场每过一段时间会刷新一次。" />
+      <Text layoutX="14.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.玩家在市场上的交易会影响当地市场上这个货物的价格。例如，玩家在某地大量购入了一种" />
+      <Text layoutX="14.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="商品而导致该商品数量锐减，则该商品的价格在当地会大幅上涨。" />
+      <Text layoutX="14.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.玩家购入的货物将会被存储在仓库中，仓库会帮助玩家计算出当前商品的平均价值，以方便" />
+      <Text layoutX="14.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="玩家判断合适的出售价格。" />
+      <ImageView fitHeight="227.0" fitWidth="240.0" layoutX="432.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/logo1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analyzed and Designed by:王金金 田振 陈悦" />
+      <Text layoutX="14.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coded and Tested by:李睿恺 范新萍" />
+      <Line endX="100.0" layoutX="101.0" layoutY="407.0" startX="-100.0" />
+      <Text layoutX="14.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powerded by:大家对才是真的队" />
+   </children>
+</AnchorPane>

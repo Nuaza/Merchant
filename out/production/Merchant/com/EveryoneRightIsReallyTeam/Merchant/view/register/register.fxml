@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EveryoneRightIsReallyTeam.Merchant.controller.ClientController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="10.0" prefWidth="222.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="548.0" minWidth="10.0" prefWidth="378.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="328.0" minHeight="10.0" prefHeight="324.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#registerJudge" text="注册" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="300.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" text="取消" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin></Button>
+        <Label text="请输入用户名" GridPane.columnIndex="1" />
+        <Label text="请输入密码" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets top="100.0" />
+            </GridPane.margin>
+        </Label>
+        <PasswordField fx:id="setPassword" promptText="Enter password here" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="100.0" right="50.0" top="100.0" />
+            </GridPane.margin>
+        </PasswordField>
+        <TextField fx:id="setUsername" promptText="Enter username here" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="100.0" right="50.0" />
+            </GridPane.margin>
+        </TextField>
+      <Text fill="#b53b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER">
+         <font>
+            <Font name="Caveat Regular" size="36.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="40.0" top="-200.0" />
+         </GridPane.margin>
+      </Text>
+    </children>
+</GridPane>

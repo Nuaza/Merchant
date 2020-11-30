@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EveryoneRightIsReallyTeam.Merchant.controller.ClientController">
+   <children>
+      <Text fill="#e11919" layoutX="28.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MERCHANT">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="80.0" />
+         </font>
+      </Text>
+      <Text layoutX="711.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ver 1.01" />
+      <Text fill="#b21515" layoutX="504.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="——商人重利轻别离">
+         <font>
+            <Font name="Microsoft YaHei" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="384.0" fitWidth="494.0" layoutX="300.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/images/china.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="259.0" layoutX="220.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/images/coins.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="135.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="448.0" prefWidth="173.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#register" text="NEW">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#login" text="LOGIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#about" text="ABOUT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#quitask" text="EXIT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

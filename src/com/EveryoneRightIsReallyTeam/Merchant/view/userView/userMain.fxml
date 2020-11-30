@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EveryoneRightIsReallyTeam.Merchant.controller.UserMainController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="247.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="839.0" minWidth="10.0" prefWidth="553.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="354.0" minHeight="0.0" prefHeight="178.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="376.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="229.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="用户">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#restart" text="重新开始" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#payDebt" text="偿还债务" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem fx:id="northItem" mnemonicParsing="false" onAction="#goNorth" text="向北移动" />
+                  <MenuItem fx:id="eastItem" mnemonicParsing="false" onAction="#goEast" text="向东移动" />
+                  <MenuItem fx:id="westItem" mnemonicParsing="false" onAction="#goWest" text="向西移动" />
+                  <MenuItem fx:id="southItem" mnemonicParsing="false" onAction="#goSouth" text="向南移动" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="市场">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#seeNation" text="查看全国市场" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeLocal" text="查看当地市场" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeSomewhere" text="查看某地市场" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeSomething" text="查看某种货物" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="buy" mnemonicParsing="false" onAction="#buy" text="购入商品" />
+                  <MenuItem fx:id="sell" mnemonicParsing="false" onAction="#sell" text="出售商品" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#seeStorage" text="仓库">
+            <items>
+              <MenuItem mnemonicParsing="false" text="查看仓库" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="关于">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#about" text="关于界面" />
+              </items>
+            </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="-150.0" />
+         </GridPane.margin>
+      </MenuBar>
+      <MenuBar prefHeight="31.0" prefWidth="792.0" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets top="-150.0" />
+         </GridPane.margin>
+      </MenuBar>
+      <Label text="当前时间：">
+         <GridPane.margin>
+            <Insets top="-20.0" />
+         </GridPane.margin></Label>
+      <Label fx:id="nowDate" text="2020-05-01">
+         <GridPane.margin>
+            <Insets left="70.0" top="-20.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="距离游戏结束还有：">
+         <GridPane.margin>
+            <Insets top="80.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="-40.0" />
+         </padding>
+      </Label>
+      <Label fx:id="endDay" text="1">
+         <GridPane.margin>
+            <Insets left="130.0" top="80.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="-40.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="81.0" prefWidth="243.0" text="天">
+         <padding>
+            <Insets left="160.0" top="40.0" />
+         </padding>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MERCHANT " GridPane.columnIndex="1">
+         <font>
+            <Font name="Caveat Regular" size="80.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="30.0" top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <ImageView fx:id="map" fitHeight="506.0" fitWidth="804.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <image>
+<!--            <Image url="@../resources/images/1.png" />-->
+         </image>
+      </ImageView>
+      <Label text="当前资金：" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="cash" text="1000.00" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="80.0" top="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="￥" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="160.0" top="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="当前债务：" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="200.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="debt" text="100000.00" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="80.0" top="200.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="￥" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="160.0" top="200.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="你目前在：" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="-400.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="你的北边是：" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="-300.0" />
+         </padding>
+      </Label>
+      <Label text="你的东边是：" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="-200.0" />
+         </padding>
+      </Label>
+      <Label text="你的西边是：" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="-100.0" />
+         </padding>
+      </Label>
+      <Label text="你的南边是：" GridPane.rowIndex="1" />
+      <Label fx:id="nowin" text="目前所在地" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="100.0" top="-400.0" />
+         </padding>
+      </Label>
+      <Label fx:id="northplace" text="北边" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="100.0" top="-300.0" />
+         </padding>
+      </Label>
+      <Label fx:id="eastplace" text="东边" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="100.0" top="-200.0" />
+         </padding>
+      </Label>
+      <Label fx:id="westplace" text="西边" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="100.0" top="-100.0" />
+         </padding>
+      </Label>
+      <Label fx:id="southplace" text="南边" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Line endX="100.0" startX="-100.0">
+         <GridPane.margin>
+            <Insets top="110.0" />
+         </GridPane.margin>
+      </Line>
+      <Label text="欢迎您    Player">
+         <padding>
+            <Insets top="-80.0" />
+         </padding>
+      </Label>
+      <Label fx:id="freshState" text="正在更新市场请稍等" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="moveState" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="200.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="40.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="inputNumber" disable="true" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="50.0" right="100.0" top="-50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="inputName" disable="true" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="50.0" right="100.0" top="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="submitBtn" disable="true" mnemonicParsing="false" onAction="#submit" text="提交" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="160.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="距离市场刷新还有:">
+         <GridPane.margin>
+            <Insets top="90.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="freshDay" text="1">
+         <padding>
+            <Insets left="130.0" top="90.0" />
+         </padding>
+      </Label>
+      <Label text="天">
+         <GridPane.margin>
+            <Insets left="160.0" top="90.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

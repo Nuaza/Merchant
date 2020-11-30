@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EveryoneRightIsReallyTeam.Merchant.controller.PlayerTableController">
+   <children>
+      <VBox prefHeight="354.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="plist" prefHeight="400.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="ColumnPname" prefWidth="134.0" text="名称" />
+                <TableColumn fx:id="ColumnPcash" prefWidth="90.0" text="现金" />
+                  <TableColumn fx:id="ColumnPdebt" prefWidth="111.0" text="债务" />
+                  <TableColumn fx:id="ColumnPdate" prefWidth="139.0" text="日期" />
+                  <TableColumn fx:id="ColumnPnowin" prefWidth="79.0" text="现在位于" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="select" layoutX="493.0" layoutY="356.0" mnemonicParsing="false" onAction="#select" text="选择" />
+      <Button fx:id="add" layoutX="14.0" layoutY="356.0" mnemonicParsing="false" text="新增" />
+   </children>
+</AnchorPane>
